@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Submissions</title>
+    <link rel="stylesheet" href="assi_sub.css">
+</head>
+<body>
+
+<div class="main">
+
+    <div class="sidebar">
+        <h2>EduHub</h2>
+        <ul>
+            <li onclick="goDash()">Dashboard</li>
+            <li class="active">Submissions</li>
+            <li onclick="goAssign()">Assignments</li>
+        </ul>
+    </div>
+
+
+    <div class="content">
+
+        <div class="topbar">
+            <h2>Submissions</h2>
+            <span id="teacherName"></span>
+        </div>
+
+        <div class="table-box">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Assignment</th>
+                        <th>Submitted Link</th>
+                        <th>Status</th>
+                        <th>Marks</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody id="submissionTable"></tbody>
+            </table>
+        </div>
+
+    </div>
+</div>
+
+<script src="assi_sub.js"></script>
+</body>
+</html>

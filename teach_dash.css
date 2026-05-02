@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background-color: #f4f6fb;
+}
+
+.layout {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 230px;
+    background: white;
+    padding: 25px 20px;
+    border-right: 1px solid #eee;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #3b5bdb;
+    margin-bottom: 30px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    padding: 12px 14px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #555;
+    transition: 0.2s;
+}
+
+.sidebar li:hover {
+    background: #eef2ff;
+    color: #3b5bdb;
+}
+
+.sidebar .active {
+    background: #3b5bdb;
+    color: white;
+}
+
+.main {
+    flex: 1;
+    padding: 25px 35px;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.user {
+    background: white;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-bottom: 30px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+.card p {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.card h3 {
+    font-size: 24px;
+    color: #222;
+}
+
+.table-container {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.table-header button {
+    background: #3b5bdb;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-weight: 500;
+}
+
+.table-header button:hover {
+    background: #2f4bcc;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background: #f1f3f9;
+}
+
+th, td {
+    padding: 14px 12px;
+    text-align: left;
+    font-size: 14px;
+}
+
+td {
+    vertical-align: middle;
+}
+
+tbody tr {
+    border-bottom: 1px solid #eee;
+    transition: 0.2s;
+}
+
+tbody tr:hover {
+    background: #f1f3ff;
+}
+
+.active, .pending {
+    border: none;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: default;
+}
+
+.active {
+    background: #e6fcf5;
+    color: #099268;
+}
+
+.pending {
+    background: #ffe3e3;
+    color: #c92a2a;
+}
+/* #open:hover {
+    cursor: pointer;
+    color: rgb(15, 15, 139);
+    text-decoration: underline;
+} */

@@ -1,0 +1,165 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.details {
+    width: 16%;
+    background-color: #f8f9fc;
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.05);
+}
+
+.details div {
+    width: 100%;
+    height: 45px;
+    font-size: 16px;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 15px;
+    border-radius: 8px;
+    transition: all 0.25s ease;
+}
+
+.details div:hover {
+    background-color: #e6e9ff;
+    color: #3040c7;
+    transform: translateX(6px);
+}
+
+.details .logo:hover {
+    transform: none;
+}
+
+.details .assignments {
+    color: white;
+    background-color: #3040c7;
+}
+
+.details .logo {
+    font-size: 26px;
+    margin: 20px 10px;
+    font-weight: 700;
+    color: #3040c7;
+}
+
+.dash, .assignments, .logout {
+    cursor: pointer;
+}
+
+.page {
+    width: 84%;
+    background-color: #f4f6fb;
+}
+
+.nav {
+    height: 70px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.profile {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.profile-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.boxes {
+    margin: 30px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    width: 60%;
+}
+
+.boxes h1 {
+    font-size: 26px;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.boxes p {
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.boxes input,
+.boxes textarea {
+    border: 1.5px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    transition: 0.2s ease;
+}
+
+.boxes input:focus,
+.boxes textarea:focus {
+    border-color: #3040c7;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(48, 64, 199, 0.1);
+}
+
+.boxes textarea {
+    height: 120px;
+    resize: none;
+}
+
+.boxes div {
+    margin-bottom: 20px;
+}
+
+.boxes button {
+    background-color: #3040c7;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    width: 100%;
+}
+
+.boxes button:hover {
+    background-color: #1f2ea6;
+    transform: translateY(-2px);
+}
+
+.boxes button:active {
+    transform: scale(0.98);
+}

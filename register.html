@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register User</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="main">
+        <div class="photo">
+            <div class="text">
+                <h1>Want to register?</h1>
+                <h2 class="normal">Register to start your learning journey.</h2>
+            </div>
+        </div>
+        <div class="form_div">
+            <div class="form">
+        <div class="register">Register User</div>
+        <div class="username">
+            <div>User name</div>
+            <input type="text" class="inp_user" placeholder="Type your username">
+            <div class="user_error"> Username is not valid!</div>
+        </div>
+        <div class="email">
+            <div>Email</div>
+            <input type="text" class="inp_mail" placeholder="Type your email">
+            <div class="email_error">Email format is not valid...</div>
+        </div>
+        <div class="password">
+            <div>Password</div>
+            <input type="password" class="inp_pass" placeholder="Enter your password">
+            <div class="pass_error">Either password is too big or too small...</div>
+        </div>
+        <div class="confirm-password">
+            <div>Confirm password</div>
+            <input type="password" class="inp_confirm" placeholder="Rewrite your password">
+            <div class="confirm_error">Password do not matched!</div>
+        </div>
+        <div class="role">
+            <div class="a" style="font-size: 14px; font-weight: bold">I am a</div>
+            <div class="b">
+                <select name="role">
+                    <option value="" disabled selected>Select role</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="student">Student</option>
+                </select>
+            </div>
+        </div>
+        <!-- <div class="role_error">Please select a role!</div> -->
+        <div class="sign_up">Sign Up</div>
+        <div class="login">Already an account?</div>
+    </div>
+        </div>
+    </div>
+    <script src="register.js"></script>
+</body>
+</html>

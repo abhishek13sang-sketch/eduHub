@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teacher Dashboard</title>
+    <link rel="stylesheet" href="teach_dash.css">
+</head>
+<body>
+
+<div class="layout">
+
+    <aside class="sidebar">
+        <div class="logo">EduTask</div>
+
+        <nav>
+            <ul>
+                <li class="active">Dashboard</li>
+                <li class="assign">Assignments</li>
+                <li class="sub_missions">Submissions</li>
+                <li class="Logout">Logout</li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="main">
+
+        <header class="topbar">
+            <h2>Dashboard</h2>
+            <div class="user" id="teacherName">
+            </div>
+        </header>
+
+        <section class="stats">
+
+            <div class="card">
+                <p>Total Assignments</p>
+                <h3 id="totalAssignments"></h3>
+            </div>
+
+            <div class="card">
+                <p>Total Submissions</p>
+                <h3 id="totalSubmissions"></h3>
+            </div>
+
+            <div class="card">
+                <p>Pending Reviews</p>
+                <h3 id="pendingReviews"></h3>
+            </div>
+
+        </section>
+
+        <section class="table-container">
+
+            <div class="table-header">
+                <h3>Recent Assignments</h3>
+                <button id="createBtn" type="button">+ Create Assignments</button>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Deadline</th>
+
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody id="assignmentTable">
+                </tbody>
+            </table>
+
+        </section>
+
+    </main>
+
+</div>
+<script src="teach_dash.js"></script>
+</body>
+</html>

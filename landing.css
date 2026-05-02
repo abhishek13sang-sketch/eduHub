@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background: #f9fbff;
+}
+
+.nav {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+}
+
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #3040c7;
+    letter-spacing: 1px;
+}
+
+
+.bars {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.bars span {
+    color: #555;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.bars span:hover {
+    color: #3040c7;
+}
+
+
+button {
+    cursor: pointer;
+    border: none;
+    transition: 0.3s ease;
+}
+
+.login {
+    color: #3040c7;
+    border: 1px solid #3040c7;
+    background: white;
+    padding: 8px 18px;
+    border-radius: 6px;
+}
+
+.login:hover {
+    background: #3040c7;
+    color: white;
+}
+
+
+.register {
+    background: #3040c7;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(48, 64, 199, 0.3);
+}
+
+.register:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(48, 64, 199, 0.4);
+}
+
+
+.main {
+    display: flex;
+    height: calc(100vh - 70px);
+    padding: 0 100px;
+}
+
+
+.a {
+    width: 50%;
+    background-image: url("search.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+
+.b {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.text {
+    max-width: 520px;
+}
+
+h1 {
+    font-size: 50px;
+    color: #222;
+    line-height: 1.3;
+}
+
+.para {
+    display: block;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #666;
+}
+
+
+.buttons {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+}
+
+.get {
+    background: #3040c7;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(48, 64, 199, 0.3);
+}
+
+.get:hover {
+    transform: translateY(-2px);
+}
+
+
+.learn {
+    border: 1px solid #3040c7;
+    color: #3040c7;
+    background: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+}
+
+.learn:hover {
+    background: #3040c7;
+    color: white;
+}
