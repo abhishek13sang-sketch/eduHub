@@ -18,7 +18,7 @@ let assi = document.querySelector(".assign");
 let logout_btn = document.querySelector(".Logout");
 
 logout_btn.addEventListener('click',()=>{
-    document.location.href = "landing.html";
+    document.location.href = "index.html";
     localStorage.setItem("eduhub_currentUser","");
 })
 
