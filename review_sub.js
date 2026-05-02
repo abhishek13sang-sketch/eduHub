@@ -2,7 +2,7 @@ window.onload = function () {
     let currentUser = localStorage.getItem("eduhub_currentUser");
 
     if (!currentUser) {
-        window.location.href = "landing.html";
+        window.location.href = "index.html";
     }
 };
 
