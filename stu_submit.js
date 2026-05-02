@@ -34,6 +34,10 @@ function renderDetails(){
 renderDetails();
 
 submit.addEventListener("click",()=>{
+    if (link.value === ""){
+        alert("You have not pasted the link.");
+        return;
+    }
     if (!assignment.submissions){
         assignment.submissions = [];
     }
