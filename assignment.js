@@ -19,7 +19,7 @@ dashboard.addEventListener('click',()=>{
 })
 
 logout_btn.addEventListener('click',()=>{
-    document.location.href = "landing.html";
+    document.location.href = "index.html";
     localStorage.setItem("eduhub_currentUser","");
 })
 
