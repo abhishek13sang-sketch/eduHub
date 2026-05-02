@@ -12,7 +12,7 @@ let assi_details = JSON.parse(localStorage.getItem("assignment_details"));
 let logout_btn = document.querySelector(".logout");
 
 logout_btn.addEventListener('click',()=>{
-    document.location.href = "landing.html";
+    document.location.href = "index.html";
     localStorage.setItem("eduhub_currentUser", "");
 })
 
