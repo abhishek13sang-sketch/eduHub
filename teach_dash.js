@@ -44,18 +44,17 @@ let assignment_count = 0;
             if (obj.teacher === `${user}`){
                 assignment_count++;
 
-                // console.log(obj.submissions[0].status);
-                // console.log(obj.submissions[0].marks);
-
-                for (let i = 0; i<obj.submissions.length; i++)
-                {
+            
+               if (obj.submissions && obj.submissions.length > 0) {
+                    for (let i = 0; i < obj.submissions.length; i++) {
                     if (obj.submissions[i].status === "Submitted"){
-                    sub_count++;
+                        sub_count++;
+                    }
+                    if (obj.submissions[i].marks){
+                        review_sub++;
+                    }
+                    }
                 }
-                if (obj.submissions[i].marks){
-                    review_sub++;
-                }
-            }
                 let tr = document.createElement("tr");
                 let td_title = document.createElement("td");
                 td_title.id = "open";
