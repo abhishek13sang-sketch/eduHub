@@ -40,9 +40,12 @@ function assignments(){
             <div>${obj.date_value}</div>
             <div class="${classname}">${status}</div>
             <div><button onclick="openDetail('${obj.uid}')">View</button></div>
-            <div>-</div>
+            <div class="marks">-</div>
         `;
-
+        let marks_div = row.querySelector(".marks");
+        if (!(obj.submmisions.marks === null)){
+            marks_div.textContent = `${obj.submissions.marks}`;
+        }
         cred_div.appendChild(row);
     }
 }
