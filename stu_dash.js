@@ -43,10 +43,10 @@ function assignments(){
             <div class="marks">-</div>
         `;
         let marks_div = row.querySelector(".marks");
-        console.log(obj.submmisions.marks);
-        if (!(obj.submmisions.marks === null)){
-            console.log(obj.submmisions.marks);
-            marks_div.textContent = `${obj.submissions.marks}`;
+
+        if (submission && submission.marks != null){
+            console.log(submission.marks);
+            marks_div.textContent = submission.marks;
         }
         cred_div.appendChild(row);
     }
