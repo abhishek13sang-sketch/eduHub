@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>About - EduTask</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+        background: #eef2f7;
+        color: #333;
+    }
+
+    .container {
+        max-width: 1000px;
+        margin: 40px auto;
+        padding: 20px;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .back-btn {
+        background: #4a63e7;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 500;
+        transition: 0.3s;
+    }
+
+    .back-btn:hover {
+        background: #2f47c7;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 25px;
+        color: #222;
+    }
+
+    .card {
+        background: white;
+        border-radius: 14px;
+        padding: 25px;
+        margin-bottom: 25px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    .card h2 {
+        margin-bottom: 15px;
+        color: #444;
+    }
+
+    .profile {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .profile img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #4a63e7;
+    }
+
+    .info h3 {
+        margin-bottom: 6px;
+        font-size: 18px;
+    }
+
+    .info p {
+        margin: 3px 0;
+        color: #666;
+    }
+
+    .info a {
+        text-decoration: none;
+        color: #4a63e7;
+        font-weight: 500;
+    }
+
+    .info a:hover {
+        text-decoration: underline;
+    }
+
+    .placeholder {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 2px dashed #bbb;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #888;
+        font-size: 14px;
+    }
+
+    /* Responsive */
+    @media(max-width: 700px){
+        .profile {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <a href="index.html" class="back-btn">← Back</a>
+        <h1>About EduTask</h1>
+        <div></div>
+    </div>
+
+    <!-- Project -->
+    <div class="card">
+        <h2>Project Overview</h2>
+        <p>
+            EduTask is a modern assignment management system designed to simplify 
+            task tracking for students and streamline assignment handling for teachers.
+        </p>
+    </div>
+
+    <!-- Abhishek -->
+    <div class="card">
+        <h2>Developer</h2>
+        <div class="profile">
+            <img src="Abhishek_Sangwan.jpeg" alt="Abhishek">
+
+            <div class="info">
+                <h3>Abhishek Sangwan</h3>
+                <p>B.Tech CSE Student</p>
+                <p>
+                    <a href="https://github.com/abhishek13sang-sketch" target="_blank">
+                        GitHub Profile
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Aarav -->
+    <div class="card">
+        <h2>Co-Partner</h2>
+        <div class="profile">
+            <img src="Aarav.jpeg" alt="Aarav">
+
+            <div class="info">
+                <h3>Aarav</h3>
+                <p>B.Tech CSE Student</p>
+                <p>
+                    <a href="https://github.com/Aaravsharma395" target="_blank">
+                        GitHub Profile
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Professor -->
+    <div class="card">
+        <h2>Project Guidance</h2>
+        <div class="profile">
+
+            <!-- IMPORTANT: put image in project folder -->
+            <img src="Abhishek_thakur_prof.png" alt="Professor">
+
+            <div class="info">
+                <h3>Abhishek Thakur</h3>
+                <p>Associate Professor</p>
+                <p>
+                    Provided guidance and mentorship throughout the project development.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
